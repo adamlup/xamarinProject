@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using xamarinProjekt.ViewModels;
 using xamarinProjekt.Views;
 
 namespace xamarinProjekt
@@ -14,7 +15,7 @@ namespace xamarinProjekt
             MainPage = new MainPage();
         }
 
-        protected override void OnStart()
+        protected override  void OnStart()
         {
         }
 

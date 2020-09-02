@@ -7,10 +7,14 @@
              x:Class="xamarinProjekt.Views.MainPage">
     <ContentPage.Content>
         <Grid>
-            <ListView x:Name="listaListView" ItemsSource="{Binding listOfStrings}">
+            <ListView x:Name="FactsListView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <TextCell Text="{Binding Element}"/>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding text}"/>
+                            </StackLayout>
+                        </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
